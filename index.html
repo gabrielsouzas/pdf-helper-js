@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Merger</title>
+    <link href="./src/assets/styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="container-logo" alt="Your Company" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=500" />
+      <div class="container-header">
+        <a href="https://github.com/gabrielsouzas/pdf-helper-js" class="container-header-links" id="github-link">
+          <span class="container-header-link-1">Github</span>
+        </a>
+      </div>
+      <h1 class="container-title">Unifique seus arquivos PDF com alguns cliques</h1>
+      <p class="container-text">
+        Para unificar seus arquivos no formato pdf, seleciones-os em <span class="container-text-strong">"Escolher arquivos"</span>. A seleção
+        deve ser na ordem que deseja que os PDFs sejam unidos, em seguida clique em <span class="container-text-strong">"Unir PDFs"</span> e
+        escolha uma pasta no seu computador para salvar o novo arquivo unificado.
+      </p>
+      <!--<div class="merger">
+        <input class="merger-input" type="file" id="fileInput" multiple accept=".pdf" />
+        <button class="merger-button" id="mergeBtn">Unir PDFs</button>
+      </div>-->
+
+      <div class="load-file-container">
+        <input class="ldc-button" type="file" id="fileInput" multiple accept=".pdf" />
+        <button class="ldc-button" id="mergeBtn">Unir PDFs</button>
+      </div>
+    </div>
+
+    <script src="./src/js/renderer.js"></script>
+  </body>
+</html>
