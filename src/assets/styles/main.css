@@ -8,6 +8,16 @@
   text-decoration: none;
 }
 
+:root {
+  --bg-body: #0a0e17;
+  --bg-body-gradient: linear-gradient(354deg, rgba(10, 14, 23, 1) 0%, rgba(13, 12, 31, 1) 50%, rgba(39, 39, 55, 1) 100%);
+  --cl-text: #93c9ff;
+  --cl-text-p: #888f97; /* d1d5db */
+  --bg-button: #1e90ff; /* e43838;*/
+  --bg-button-hover: #027efa; /*d85d5d;*/
+  --bg-button-back: #027efa2a;
+}
+
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
@@ -16,8 +26,10 @@
 }
 
 body {
-  color: #ffffff;
-  background-color: #0a0e17;
+  height: 100vh;
+  color: var(--cl-text);
+  background: var(--bg-body);
+  /*background: var(--bg-body-gradient);*/
   font-family: 'Inter', sans-serif;
 }
 
@@ -39,7 +51,7 @@ body {
 .container-header-link-1 {
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(99 102 241 / 0.2);
+  --tw-ring-color: #6371f133;
   --tw-ring-inset: inset;
   --tw-shadow: 0 0 #0000;
 
@@ -51,8 +63,8 @@ body {
   line-height: 1.5rem;
   font-size: 0.875rem;
   font-weight: 600;
-  background-color: rgb(99 102 241 / 0.1);
-  color: rgb(129 140 248 / 1);
+  background-color: rgba(99, 101, 241, 0.1);
+  color: var(--bg-button);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
@@ -60,8 +72,12 @@ body {
   border-radius: 9999px;
 }
 
+.container-header-link-1:hover {
+  color: var(--bg-button-hover);
+}
+
 .container-header-link-1:visited {
-  color: rgb(129 140 248 / 1);
+  color: var(--bg-button);
 }
 
 .container-title {
@@ -74,7 +90,7 @@ body {
 
 .container-text {
   padding-top: 2rem;
-  color: rgb(209 213 219 / 1);
+  color: var(--cl-text-p);
   line-height: 2rem;
   font-size: 1.125rem;
 }
@@ -85,7 +101,7 @@ body {
 
 .load-file-container {
   margin-top: 2.5rem;
-  background-color: #7ca5e246;
+  background-color: var(--bg-button-back);
   padding: 12px;
   border-radius: 8px;
 
@@ -101,7 +117,7 @@ body {
 
 .ldc-button,
 .ldc-input {
-  background-color: rgb(99 102 241 / 1);
+  background-color: var(--bg-button);
   color: rgb(255 255 255 / 1);
   font-weight: 600;
   font-size: 0.875rem;
@@ -115,5 +131,5 @@ body {
 }
 
 .ldc-button:hover {
-  background-color: #8f90f0;
+  background-color: var(--bg-button-hover);
 }

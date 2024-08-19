@@ -1,5 +1,7 @@
 # Aplicativo de Unificação de PDFs com Electron
 
+![Print Screen](./src/assets/images/print_screen_02.png)
+
 Este projeto de código aberto é uma aplicação desktop simples construída com Electron que permite aos usuários mesclar vários arquivos PDF em um único documento. A aplicação utiliza a biblioteca PDF-lib para manipulação de PDFs.
 
 ## Funcionalidades

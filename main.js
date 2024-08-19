@@ -43,7 +43,7 @@ ipcMain.handle('merge-pdfs', async (event, files) => {
     const mergedPdfBytes = await mergedPdf.save();
     const savePath = dialog.showSaveDialogSync({
       title: 'Salve o PDF unificado',
-      defaultPath: 'merged.pdf',
+      defaultPath: 'PDF_Unificado.pdf',
       filters: [{ name: 'PDF Files', extensions: ['pdf'] }],
     });
 

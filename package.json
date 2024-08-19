@@ -20,20 +20,22 @@
     "productName": "Unificador PDF",
     "files": [
       "main.js",
+      "src/js/renderer.js",
       "src/index.html",
+      "src/assets/styles/main.css",
       "package.json"
     ],
     "win": {
       "target": "nsis",
-      "icon": "assets/icon.ico"
+      "icon": "src/assets/icons/icon.ico"
     },
     "mac": {
       "target": "dmg",
-      "icon": "assets/icon.icns"
+      "icon": "src/assets/icons/icon.icns"
     },
     "linux": {
       "target": "AppImage",
-      "icon": "assets"
+      "icon": "src/assets/icons/icon.png"
     }
   },
   "keywords": [],
