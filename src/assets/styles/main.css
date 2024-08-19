@@ -69,7 +69,7 @@ body {
   font-size: 3rem;
   line-height: 1;
   letter-spacing: -0.025em;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .container-text {
@@ -115,5 +115,5 @@ body {
 }
 
 .ldc-button:hover {
-  background-color: rgb(143, 144, 240);
+  background-color: #8f90f0;
 }

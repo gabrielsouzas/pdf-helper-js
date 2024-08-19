@@ -17,10 +17,10 @@
   },
   "build": {
     "appId": "com.gabrielsouzas.pdfhelperjs",
-    "productName": "PDF Helper JS",
+    "productName": "Unificador PDF",
     "files": [
       "main.js",
-      "index.html",
+      "src/index.html",
       "package.json"
     ],
     "win": {
@@ -40,3 +40,4 @@
   "author": "",
   "license": "ISC"
 }
+
