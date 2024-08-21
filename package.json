@@ -36,6 +36,14 @@
     "linux": {
       "target": "AppImage",
       "icon": "src/assets/icons/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,              
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Unificador PDF"
     }
   },
   "keywords": [],
